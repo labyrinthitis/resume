@@ -1,0 +1,61 @@
+\documentclass[12pt]{article}
+
+% custom page layout
+% reference: https://ctan.org/pkg/geometry
+\usepackage[margin=0.5in]{geometry}
+
+% no header/footer page numbers
+% reference: http://www.emerson.emory.edu/services/latex/latex_129.html
+\pagestyle{empty}
+
+% gfs neohellenic font
+% reference: https://tug.org/FontCatalogue/gfsneohellenic/
+\usepackage[default]{gfsneohellenic}
+% font encoding
+% reference: https://ctan.org/pkg/fontenc
+% documentation: https://www.ctan.org/pkg/encguide
+\usepackage[LGR,T1]{fontenc}
+
+\usepackage[colorlinks]{hyperref}
+
+\usepackage[svgnames]{xcolor}
+\definecolor{purp}{RGB}{128, 0, 128}
+\hypersetup{urlcolor=purp}
+
+\usepackage{mdwlist}
+
+\newcommand{\ressection}[1]{\noindent{\large\textbf{#1}}
+\vspace{2pt}\hrule\vspace{4pt}}
+
+\newcommand{\leftandright}[2]{\noindent\textbf{#1}\hfill{#2}}
+\newcommand{\mytilde}{\raise.17ex\hbox{$\scriptstyle\mathtt{\sim}$}}
+ 
+\begin{document}
+% changes the background color of all the pages
+% reference: https://ctan.org/pkg/pagecolor
+\pagecolor{FloralWhite}
+
+\begin{center}
+% \textbf denotes bold text
+% 	\textbf versus \bf reference: https://tex.stackexchange.com/a/41718
+% \Huge denotes largest of ten typefaces available
+\textbf{\Huge{Name Redacted}}
+
+1 Earth, Milky Way, Local Group
+% \textbullet denotes a bullet/disc
+% \, denotes a single space
+% \href denotes a hyperlink reference
+\textbullet\, \href{https://example.com/}{https://example.com/}
+\textbullet\, \href{mailto:resume@example.com}{resume@example.com}
+\end{center}
+
+\ressection{Languages \& Technologies}
+% \noindent suppresses the paragraph indentation
+% 	functions at the beginning of the paragraph
+% 	no effect at the middle of a paragraph
+\noindent \textbf{Proficient in} Python, Java, Go, Containers/Docker, Linux, Compute Infrastructure, System Admin \\
+% two backslashes (\\) denote a line break/new line
+\noindent \textbf{Experienced in} Kafka, distributed key-value storage, RPC frameworks, \TeX \\
+\noindent \textbf{Interested in} Rust, Linux KVM, filesystems, blob storage \\
+
+\end{document}
