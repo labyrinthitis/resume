@@ -39,12 +39,13 @@
 % \textbf denotes bold text
 % 	\textbf versus \bf reference: https://tex.stackexchange.com/a/41718
 % \Huge denotes largest of ten typefaces available
-\textbf{\Huge{Name Redacted}}
+\textbf{\Huge{Søren Kierkegaard}}
 
-1 Earth, Milky Way, Local Group
+Open to remote
 % \textbullet denotes a bullet/disc
 % \, denotes a single space
 % \href denotes a hyperlink reference
+\textbullet\, \href{https://example.com/}{https://sr.ht/example/}
 \textbullet\, \href{https://example.com/}{https://example.com/}
 \textbullet\, \href{mailto:resume@example.com}{resume@example.com}
 \end{center}
@@ -57,5 +58,61 @@
 % two backslashes (\\) denote a line break/new line
 \noindent \textbf{Experienced in} Kafka, distributed key-value storage, RPC frameworks, \TeX \\
 \noindent \textbf{Interested in} Rust, Linux KVM, filesystems, blob storage \\
+
+\ressection{Work Experience}
+\leftandright{Uber: Merchant Platform}{Copenhagen, Denmark \textbullet\, December 2019 -- December 2021} \\
+\textit{Senior Software Engineer}\\[0.1em] %% \\ takes an optional argument, the distance
+\vspace{-1.4em}
+\begin{itemize*} %% itemize* is from the mdwlist package
+\item
+Led a Delivery Engineering migration effort from a legacy node.js platform to a modern Golang stack, coordinating the migration of over 80 mobile facing endpoints and 10+ teams
+\item
+Designed and implemented a new Kafka consumer platform for Merchant Engineering, enabling engineers to write consumers with no boilerplate and little operational cost
+\end{itemize*}
+
+\leftandright{Uber: Map Services}{Copenhagen, Denmark \textbullet\, June 2017 -- November 2019} \\
+\textit{Senior Software Engineer}\\[0.1em] %% \\ takes an optional argument, the distance
+\vspace{-1.4em}
+\begin{itemize*} %% itemize* is from the mdwlist package
+\item
+Designed and implemented a new storage system and read APIs for Uber internal map data, resulting in increased storage efficiency, reduced maintenance burden, and flexible API evolution; the new system scaled to very high amounts of traffic while maintaining low latency for many years after
+\item
+Contributed to dependency maintenance of Java monorepo including multiple upgrades of Dropwizard, improving all services at Uber written in Java
+\end{itemize*}
+
+\leftandright{Uber: Computer Infrastructure}{Copenhagen, Denmark \textbullet\, June 2016 -- June 2017} \\
+\textit{Software Engineer II}\\[0.1em] %% \\ takes an optional argument, the distance
+\vspace{-1.4em}
+\begin{itemize*} %% itemize* is from the mdwlist package
+\item
+Assisted in bringing up multiple Apache Mesos and Apache Aurora zones to overhaul compute infrastructure, including integrating an existing deploy system with new zones
+\item
+Contributed experience to designing new infrastructure across compute and RPC routing
+\end{itemize*}
+
+\leftandright{Twitter}{San Francisco, CA \textbullet\, June 2014 -- June 2016} \\
+\textit{Software Engineer I \& II}\\[0.1em] %% \\ takes an optional argument, the distance
+\vspace{-1.4em}
+\begin{itemize*} %% itemize* is from the mdwlist package
+\item
+Contributed to internal system to allow users to coordinate deploys across multiple Apache Aurora zones
+\item
+Collaborated with many engineers at Twitter to improve internal Python build hygiene
+\end{itemize*}
+
+\ressection{Selected Projects}
+\leftandright{Blog}{Source Code: \href{https://sr.ht/example/blog/}{https://sr.ht/example/blog/} \textbullet\, Demo: \href{https://example.com/}{https://example.com/} } \\
+\textit{An informal, technical blog}\\[0.1em] %% \\ takes an optional argument, the distance
+\vspace{-1.4em}
+\begin{itemize*} %% itemize* is from the mdwlist package
+\item
+Showcases my learnings and technical expertise
+\item
+Topics span various technologies including Rust, Python, Linux, and build systems
+\end{itemize*}
+
+\ressection{Educational Experience}
+\leftandright{Aarhus University: \textmd{B.S. Computer Science}}{Aarhus, Denmark \textbullet\, 2010 -- 2014} \\
+\leftandright{Santa Monica Community: \textmd{A.S. Computer Science}}{Santa Monica, CA \textbullet\, 2008 -- 2010} \\
 
 \end{document}
